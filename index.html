@@ -94,114 +94,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##第一步<br>、、、</p>
-<ul>
-<li>mkdir  + <i>filenme</i><br>、、、<blockquote>
-<p>新建一个文件夹<br>、、、</p>
-</blockquote>
-</li>
-<li>cd  + <i>filename</i><br>、、、<blockquote>
-<p>进入文件夹<br>、、、</p>
-</blockquote>
-</li>
-<li>git init<br>、、、<blockquote>
-<p>初始化操仓库（会生成一个隐藏的git文件夹）<br>、、、</p>
-</blockquote>
-</li>
-<li>touch + <i>filename</i><br>、、、<blockquote>
-<p>建立一个文件<br>##第二步<br>、、、</p>
-</blockquote>
-</li>
-<li>git add  + <i>filename</i><br>、、、<blockquote>
-<p>将文件加入提交缓存空间<br>、、、</p>
-</blockquote>
-</li>
-<li>git rm  –cached<br>、、、<blockquote>
-<p>将提交缓存空间里的文件清除<br>、、、</p>
-</blockquote>
-</li>
-<li>git commit -m + <i>‘修改注释’</i><br>、、、<blockquote>
-<p>将缓存空间里的文件提交到仓库，修改注释用引号<br>、、、</p>
-</blockquote>
-</li>
-<li>git log<br>、、、<blockquote>
-<p>查看提交记录<br>、、、</p>
-</blockquote>
-</li>
-<li>git status<br>、、、<blockquote>
-<p>查看当前git目录的状态信息<br>##第三步<br>、、、</p>
-</blockquote>
-</li>
-<li>git branch <blockquote>
-<p>查看当前分支状态（有什么分支，和当前在哪个分支工作）<br>、、、</p>
-</blockquote>
-</li>
-<li>git branch + <i>branchname</i><br>、、、<blockquote>
-<p>新建一个分支（但是不会把工作对象切换到这个分支）<br>、、、</p>
-</blockquote>
-</li>
-<li>git checkout + <i>branchname</i><br>、、、<blockquote>
-<p>将工作对象切换到这个分支<br>、、、</p>
-</blockquote>
-</li>
-<li>git chekout -b + <i>branchname</i><br>、、、<blockquote>
-<p>新建一个分支，并将工作对象切换到这个分支<br>##第四步<br>、、、</p>
-</blockquote>
-</li>
-<li>git merge + <i>branchname</i><br>、、、<blockquote>
-<p>将分支合并到master分支上来，前提是你要先把工作对象切换到master分支<br>、、、</p>
-</blockquote>
-</li>
-<li>git -d + <i>branchname</i><br>、、、<blockquote>
-<p>删除这个分支（前提是该分支已经合并到master分支）<br>、、、</p>
-</blockquote>
-</li>
-<li>git -D + <i>branchname</i><br>、、、<blockquote>
-<p>强制删除这个分支<br>##第五步<br>、、、</p>
-</blockquote>
-</li>
-<li>git tag<br>、、、<blockquote>
-<p>查看标签状态<br>、、、</p>
-</blockquote>
-</li>
-<li>git tag + <i>tagname</i><br>、、、<blockquote>
-<p>为代码添加标签<br>、、、</p>
-</blockquote>
-</li>
-<li>git checkout +<i>tagname</i><br>、、、<blockquote>
-<p>将代码切换到添加该标签时的状态<br>##生成公钥<br>安装git是会自动生成公钥，在c/document and setting/user/username/.ssh里<br>、、、</p>
-</blockquote>
-</li>
-<li>ssh-keygen -t rsa<br>、、、<blockquote>
-<p>指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥。这两文件默认分别在如下目录里生成：<br>Linux/Mac 系统 在 ~/.ssh 下，win系统在 /c/Documents and Settings/username/.ssh 下，都是隐藏文件.把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码。<br>##查看公钥<br>、、、</p>
-</blockquote>
-</li>
-<li>ssh<br>、、、<blockquote>
-<p>查看公钥<br>##第六步<br>、、、</p>
-</blockquote>
-</li>
-<li>git pull origin master<br>、、、<blockquote>
-<p>向GItHub仓库提交文件<br>、、、</p>
-</blockquote>
-</li>
-<li>git push origin master<br>、、、<blockquote>
-<p>从GitHub更新自己的文件<br>##提交文件的两种方法<br>、、、</p>
-</blockquote>
-</li>
-<li>git clone + <i>address</i>然后push<br>、、、<blockquote>
-<p>先克隆，再提交<br>、、、</p>
-</blockquote>
-</li>
-<li>git remote +<i>remotename</i> + <i>address</i>然后push<br>、、、<blockquote>
-<p>先关联再提交<br>、、、</p>
-</blockquote>
-</li>
-<li>git remote -v<br>、、、<blockquote>
-<p>查看当前的远程仓库</p>
-</blockquote>
-</li>
-</ul>
-
+        <h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><pre><code>- mkdir  + &lt;i&gt; filenme &lt;/i&gt;
+</code></pre><h3 id="新建一个文件夹"><a href="#新建一个文件夹" class="headerlink" title="新建一个文件夹"></a>新建一个文件夹</h3><pre><code>- cd  + &lt;i&gt;filename&lt;/i&gt;
+</code></pre><h3 id="进入文件夹"><a href="#进入文件夹" class="headerlink" title="进入文件夹"></a>进入文件夹</h3><pre><code>- git init
+</code></pre><h3 id="初始化操仓库（会生成一个隐藏的git文件夹）"><a href="#初始化操仓库（会生成一个隐藏的git文件夹）" class="headerlink" title="初始化操仓库（会生成一个隐藏的git文件夹）"></a>初始化操仓库（会生成一个隐藏的git文件夹）</h3><pre><code>- touch + &lt;i&gt;filename&lt;/i&gt;
+</code></pre><h3 id="建立一个文件"><a href="#建立一个文件" class="headerlink" title="建立一个文件"></a>建立一个文件</h3><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><pre><code>- git add  + &lt;i&gt;filename&lt;/i&gt;
+</code></pre><h3 id="将文件加入提交缓存空间"><a href="#将文件加入提交缓存空间" class="headerlink" title="将文件加入提交缓存空间"></a>将文件加入提交缓存空间</h3><pre><code>- git rm  --cached
+</code></pre><h3 id="将提交缓存空间里的文件清除"><a href="#将提交缓存空间里的文件清除" class="headerlink" title="将提交缓存空间里的文件清除"></a>将提交缓存空间里的文件清除</h3><pre><code>- git commit -m + &lt;i&gt;&apos;修改注释&apos;&lt;/i&gt;
+</code></pre><h3 id="将缓存空间里的文件提交到仓库，修改注释用引号"><a href="#将缓存空间里的文件提交到仓库，修改注释用引号" class="headerlink" title="将缓存空间里的文件提交到仓库，修改注释用引号"></a>将缓存空间里的文件提交到仓库，修改注释用引号</h3><pre><code>- git log
+</code></pre><h3 id="查看提交记录"><a href="#查看提交记录" class="headerlink" title="查看提交记录"></a>查看提交记录</h3><pre><code>- git status
+</code></pre><h3 id="查看当前git目录的状态信息"><a href="#查看当前git目录的状态信息" class="headerlink" title="查看当前git目录的状态信息"></a>查看当前git目录的状态信息</h3><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><pre><code>- git branch
+</code></pre><h3 id="查看当前分支状态（有什么分支，和当前在哪个分支工作）"><a href="#查看当前分支状态（有什么分支，和当前在哪个分支工作）" class="headerlink" title="查看当前分支状态（有什么分支，和当前在哪个分支工作）"></a>查看当前分支状态（有什么分支，和当前在哪个分支工作）</h3><pre><code>- git branch + &lt;i&gt;branchname&lt;/i&gt;
+</code></pre><h3 id="新建一个分支（但是不会把工作对象切换到这个分支）"><a href="#新建一个分支（但是不会把工作对象切换到这个分支）" class="headerlink" title="新建一个分支（但是不会把工作对象切换到这个分支）"></a>新建一个分支（但是不会把工作对象切换到这个分支）</h3><pre><code>- git checkout + &lt;i&gt;branchname&lt;/i&gt;
+</code></pre><h3 id="将工作对象切换到这个分支"><a href="#将工作对象切换到这个分支" class="headerlink" title="将工作对象切换到这个分支"></a>将工作对象切换到这个分支</h3><pre><code>- git chekout -b + &lt;i&gt;branchname&lt;/i&gt;
+</code></pre><h3 id="新建一个分支，并将工作对象切换到这个分支"><a href="#新建一个分支，并将工作对象切换到这个分支" class="headerlink" title="新建一个分支，并将工作对象切换到这个分支"></a>新建一个分支，并将工作对象切换到这个分支</h3><h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><pre><code>- git merge + &lt;i&gt;branchname&lt;/i&gt;
+</code></pre><h3 id="将分支合并到master分支上来，前提是你要先把工作对象切换到master分支"><a href="#将分支合并到master分支上来，前提是你要先把工作对象切换到master分支" class="headerlink" title="将分支合并到master分支上来，前提是你要先把工作对象切换到master分支"></a>将分支合并到master分支上来，前提是你要先把工作对象切换到master分支</h3><pre><code>- git -d + &lt;i&gt;branchname&lt;/i&gt;
+</code></pre><h3 id="删除这个分支（前提是该分支已经合并到master分支）"><a href="#删除这个分支（前提是该分支已经合并到master分支）" class="headerlink" title="删除这个分支（前提是该分支已经合并到master分支）"></a>删除这个分支（前提是该分支已经合并到master分支）</h3><pre><code>- git -D + &lt;i&gt;branchname&lt;/i&gt;
+</code></pre><h3 id="强制删除这个分支"><a href="#强制删除这个分支" class="headerlink" title="强制删除这个分支"></a>强制删除这个分支</h3><h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><pre><code>- git tag
+</code></pre><h3 id="查看标签状态"><a href="#查看标签状态" class="headerlink" title="查看标签状态"></a>查看标签状态</h3><pre><code>- git tag + &lt;i&gt;tagname&lt;/i&gt;
+</code></pre><h3 id="为代码添加标签"><a href="#为代码添加标签" class="headerlink" title="为代码添加标签"></a>为代码添加标签</h3><pre><code>- git checkout +&lt;i&gt;tagname&lt;/i&gt;
+</code></pre><h3 id="将代码切换到添加该标签时的状态"><a href="#将代码切换到添加该标签时的状态" class="headerlink" title="将代码切换到添加该标签时的状态"></a>将代码切换到添加该标签时的状态</h3><h2 id="生成公钥"><a href="#生成公钥" class="headerlink" title="生成公钥"></a>生成公钥</h2><h3 id="安装git是会自动生成公钥，在c-document-and-setting-user-username-ssh里"><a href="#安装git是会自动生成公钥，在c-document-and-setting-user-username-ssh里" class="headerlink" title="安装git是会自动生成公钥，在c/document and setting/user/username/.ssh里"></a>安装git是会自动生成公钥，在c/document and setting/user/username/.ssh里</h3><pre><code>- ssh-keygen -t rsa
+</code></pre><h3 id="指定-rsa-算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件-id-rsa-和-id-rsa-pub-，而-id-rsa-是密钥，id-rsa-pub-就是公钥。这两文件默认分别在如下目录里生成："><a href="#指定-rsa-算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件-id-rsa-和-id-rsa-pub-，而-id-rsa-是密钥，id-rsa-pub-就是公钥。这两文件默认分别在如下目录里生成：" class="headerlink" title="指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥。这两文件默认分别在如下目录里生成："></a>指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥。这两文件默认分别在如下目录里生成：</h3><p>Linux/Mac 系统 在 ~/.ssh 下，win系统在 /c/Documents and Settings/username/.ssh 下，都是隐藏文件.把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码。</p>
+<h2 id="查看公钥"><a href="#查看公钥" class="headerlink" title="查看公钥"></a>查看公钥</h2><pre><code>- ssh
+</code></pre><h3 id="查看公钥-1"><a href="#查看公钥-1" class="headerlink" title="查看公钥"></a>查看公钥</h3><h2 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h2><pre><code>- git pull origin master
+</code></pre><h3 id="向GItHub仓库提交文件"><a href="#向GItHub仓库提交文件" class="headerlink" title="向GItHub仓库提交文件"></a>向GItHub仓库提交文件</h3><pre><code>- git push origin master
+</code></pre><h3 id="从GitHub更新自己的文件"><a href="#从GitHub更新自己的文件" class="headerlink" title="从GitHub更新自己的文件"></a>从GitHub更新自己的文件</h3><h2 id="提交文件的两种方法"><a href="#提交文件的两种方法" class="headerlink" title="提交文件的两种方法"></a>提交文件的两种方法</h2><pre><code>- git clone + &lt;i&gt;address&lt;/i&gt;然后push
+</code></pre><h3 id="先克隆，再提交"><a href="#先克隆，再提交" class="headerlink" title="先克隆，再提交"></a>先克隆，再提交</h3><pre><code>- git remote +&lt;i&gt;remotename&lt;/i&gt; + &lt;i&gt;address&lt;/i&gt;然后push
+</code></pre><h3 id="先关联再提交"><a href="#先关联再提交" class="headerlink" title="先关联再提交"></a>先关联再提交</h3><pre><code>- git remote -v
+</code></pre><h3 id="查看当前的远程仓库"><a href="#查看当前的远程仓库" class="headerlink" title="查看当前的远程仓库"></a>查看当前的远程仓库</h3>
       
     </div>
     <footer class="article-footer">
