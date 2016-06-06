@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  <title>TinyColder</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端博客">
+    <meta charset="utf-8">
+    
+    <title>TinyColder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="description" content="前端博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="TinyColder">
 <meta property="og:url" content="http://yoursite.com/index.html">
@@ -14,268 +15,590 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TinyColder">
 <meta name="twitter:description" content="前端博客">
-  
-    <link rel="alternate" href="/atom.xml" title="TinyColder" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/titillium-web/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+    
+    
+        <link rel="stylesheet" href="/vendor/scrollLoading/style.css">
+    
+    
+    
 
 </head>
 
 <body>
-  <div id="container">
     <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">TinyColder</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Just for fun</a>
-        </h2>
-      
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Just for fun</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/开发工具/">开发工具</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/笔记/">笔记</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/随笔/">随笔</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-GitHub的使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/04/GitHub的使用/" class="article-date">
-  <time datetime="2016-06-04T15:36:23.000Z" itemprop="datePublished">2016-06-04</time>
-</a>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/04/GitHub的使用/">GitHub的使用</a>
+    <em class="page-title-link" data-url="home">主页</em>
     </h1>
-  
+</div>
+                        <div class="main-body-content">
+                            
 
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><pre><code>- mkdir  + &lt;i&gt; filenme &lt;/i&gt;
-</code></pre><h3 id="新建一个文件夹"><a href="#新建一个文件夹" class="headerlink" title="新建一个文件夹"></a>新建一个文件夹</h3><pre><code>- cd  + &lt;i&gt;filename&lt;/i&gt;
-</code></pre><h3 id="进入文件夹"><a href="#进入文件夹" class="headerlink" title="进入文件夹"></a>进入文件夹</h3><pre><code>- git init
-</code></pre><h3 id="初始化操仓库（会生成一个隐藏的git文件夹）"><a href="#初始化操仓库（会生成一个隐藏的git文件夹）" class="headerlink" title="初始化操仓库（会生成一个隐藏的git文件夹）"></a>初始化操仓库（会生成一个隐藏的git文件夹）</h3><pre><code>- touch + &lt;i&gt;filename&lt;/i&gt;
-</code></pre><h3 id="建立一个文件"><a href="#建立一个文件" class="headerlink" title="建立一个文件"></a>建立一个文件</h3><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><pre><code>- git add  + &lt;i&gt;filename&lt;/i&gt;
-</code></pre><h3 id="将文件加入提交缓存空间"><a href="#将文件加入提交缓存空间" class="headerlink" title="将文件加入提交缓存空间"></a>将文件加入提交缓存空间</h3><pre><code>- git rm  --cached
-</code></pre><h3 id="将提交缓存空间里的文件清除"><a href="#将提交缓存空间里的文件清除" class="headerlink" title="将提交缓存空间里的文件清除"></a>将提交缓存空间里的文件清除</h3><pre><code>- git commit -m + &lt;i&gt;&apos;修改注释&apos;&lt;/i&gt;
-</code></pre><h3 id="将缓存空间里的文件提交到仓库，修改注释用引号"><a href="#将缓存空间里的文件提交到仓库，修改注释用引号" class="headerlink" title="将缓存空间里的文件提交到仓库，修改注释用引号"></a>将缓存空间里的文件提交到仓库，修改注释用引号</h3><pre><code>- git log
-</code></pre><h3 id="查看提交记录"><a href="#查看提交记录" class="headerlink" title="查看提交记录"></a>查看提交记录</h3><pre><code>- git status
-</code></pre><h3 id="查看当前git目录的状态信息"><a href="#查看当前git目录的状态信息" class="headerlink" title="查看当前git目录的状态信息"></a>查看当前git目录的状态信息</h3><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><pre><code>- git branch
-</code></pre><h3 id="查看当前分支状态（有什么分支，和当前在哪个分支工作）"><a href="#查看当前分支状态（有什么分支，和当前在哪个分支工作）" class="headerlink" title="查看当前分支状态（有什么分支，和当前在哪个分支工作）"></a>查看当前分支状态（有什么分支，和当前在哪个分支工作）</h3><pre><code>- git branch + &lt;i&gt;branchname&lt;/i&gt;
-</code></pre><h3 id="新建一个分支（但是不会把工作对象切换到这个分支）"><a href="#新建一个分支（但是不会把工作对象切换到这个分支）" class="headerlink" title="新建一个分支（但是不会把工作对象切换到这个分支）"></a>新建一个分支（但是不会把工作对象切换到这个分支）</h3><pre><code>- git checkout + &lt;i&gt;branchname&lt;/i&gt;
-</code></pre><h3 id="将工作对象切换到这个分支"><a href="#将工作对象切换到这个分支" class="headerlink" title="将工作对象切换到这个分支"></a>将工作对象切换到这个分支</h3><pre><code>- git chekout -b + &lt;i&gt;branchname&lt;/i&gt;
-</code></pre><h3 id="新建一个分支，并将工作对象切换到这个分支"><a href="#新建一个分支，并将工作对象切换到这个分支" class="headerlink" title="新建一个分支，并将工作对象切换到这个分支"></a>新建一个分支，并将工作对象切换到这个分支</h3><h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><pre><code>- git merge + &lt;i&gt;branchname&lt;/i&gt;
-</code></pre><h3 id="将分支合并到master分支上来，前提是你要先把工作对象切换到master分支"><a href="#将分支合并到master分支上来，前提是你要先把工作对象切换到master分支" class="headerlink" title="将分支合并到master分支上来，前提是你要先把工作对象切换到master分支"></a>将分支合并到master分支上来，前提是你要先把工作对象切换到master分支</h3><pre><code>- git -d + &lt;i&gt;branchname&lt;/i&gt;
-</code></pre><h3 id="删除这个分支（前提是该分支已经合并到master分支）"><a href="#删除这个分支（前提是该分支已经合并到master分支）" class="headerlink" title="删除这个分支（前提是该分支已经合并到master分支）"></a>删除这个分支（前提是该分支已经合并到master分支）</h3><pre><code>- git -D + &lt;i&gt;branchname&lt;/i&gt;
-</code></pre><h3 id="强制删除这个分支"><a href="#强制删除这个分支" class="headerlink" title="强制删除这个分支"></a>强制删除这个分支</h3><h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><pre><code>- git tag
-</code></pre><h3 id="查看标签状态"><a href="#查看标签状态" class="headerlink" title="查看标签状态"></a>查看标签状态</h3><pre><code>- git tag + &lt;i&gt;tagname&lt;/i&gt;
-</code></pre><h3 id="为代码添加标签"><a href="#为代码添加标签" class="headerlink" title="为代码添加标签"></a>为代码添加标签</h3><pre><code>- git checkout +&lt;i&gt;tagname&lt;/i&gt;
-</code></pre><h3 id="将代码切换到添加该标签时的状态"><a href="#将代码切换到添加该标签时的状态" class="headerlink" title="将代码切换到添加该标签时的状态"></a>将代码切换到添加该标签时的状态</h3><h2 id="生成公钥"><a href="#生成公钥" class="headerlink" title="生成公钥"></a>生成公钥</h2><h3 id="安装git是会自动生成公钥，在c-document-and-setting-user-username-ssh里"><a href="#安装git是会自动生成公钥，在c-document-and-setting-user-username-ssh里" class="headerlink" title="安装git是会自动生成公钥，在c/document and setting/user/username/.ssh里"></a>安装git是会自动生成公钥，在c/document and setting/user/username/.ssh里</h3><pre><code>- ssh-keygen -t rsa
-</code></pre><h3 id="指定-rsa-算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件-id-rsa-和-id-rsa-pub-，而-id-rsa-是密钥，id-rsa-pub-就是公钥。这两文件默认分别在如下目录里生成："><a href="#指定-rsa-算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件-id-rsa-和-id-rsa-pub-，而-id-rsa-是密钥，id-rsa-pub-就是公钥。这两文件默认分别在如下目录里生成：" class="headerlink" title="指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥。这两文件默认分别在如下目录里生成："></a>指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥。这两文件默认分别在如下目录里生成：</h3><p>Linux/Mac 系统 在 ~/.ssh 下，win系统在 /c/Documents and Settings/username/.ssh 下，都是隐藏文件.把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码。</p>
-<h2 id="查看公钥"><a href="#查看公钥" class="headerlink" title="查看公钥"></a>查看公钥</h2><pre><code>- ssh
-</code></pre><h3 id="查看公钥-1"><a href="#查看公钥-1" class="headerlink" title="查看公钥"></a>查看公钥</h3><h2 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h2><pre><code>- git pull origin master
-</code></pre><h3 id="向GItHub仓库提交文件"><a href="#向GItHub仓库提交文件" class="headerlink" title="向GItHub仓库提交文件"></a>向GItHub仓库提交文件</h3><pre><code>- git push origin master
-</code></pre><h3 id="从GitHub更新自己的文件"><a href="#从GitHub更新自己的文件" class="headerlink" title="从GitHub更新自己的文件"></a>从GitHub更新自己的文件</h3><h2 id="提交文件的两种方法"><a href="#提交文件的两种方法" class="headerlink" title="提交文件的两种方法"></a>提交文件的两种方法</h2><pre><code>- git clone + &lt;i&gt;address&lt;/i&gt;然后push
-</code></pre><h3 id="先克隆，再提交"><a href="#先克隆，再提交" class="headerlink" title="先克隆，再提交"></a>先克隆，再提交</h3><pre><code>- git remote +&lt;i&gt;remotename&lt;/i&gt; + &lt;i&gt;address&lt;/i&gt;然后push
-</code></pre><h3 id="先关联再提交"><a href="#先关联再提交" class="headerlink" title="先关联再提交"></a>先关联再提交</h3><pre><code>- git remote -v
-</code></pre><h3 id="查看当前的远程仓库"><a href="#查看当前的远程仓库" class="headerlink" title="查看当前的远程仓库"></a>查看当前的远程仓库</h3>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/04/GitHub的使用/" data-id="cip1bye120000bw9wrw2bobms" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li></ul>
+    
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2016" class="archive-year"><i class="icon fa fa-calendar-o"></i>2016</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2016/06/04/GitHub的使用/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://i.zeze.com/attachment/forum/201603/20/133245z65ghnj5zb44jnb5.jpeg)" alt="GitHub的使用" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-url="http://yoursite.com/2016/06/04/GitHub的使用/">0</span>
+    
+</span>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/03/hello-world/" class="article-date">
-  <time datetime="2016-06-03T12:02:44.562Z" itemprop="datePublished">2016-06-03</time>
+    
 </a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
+        <div class="article-meta">
+            <p class="category">
+            <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
+            </p>
+            <p class="date"><time datetime="2016-06-04T15:36:23.000Z" itemprop="datePublished">2016-06-04</time></p>
+        </div>
+        
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h1 class="article-title" itemprop="name">
+        <a href="/2016/06/04/GitHub的使用/">GitHub的使用</a>
+        </h1>
+    
 
-      
+        <p class="article-excerpt">
+            
+第一步- mkdir  + &lt;i&gt; filenme &lt;/i&gt;
+新建一个文件夹- cd  + &lt;i&gt;filename&lt;/i&gt;
+进入文件夹- git init
+初始化操仓库（会生成一个隐藏的git文件夹）- touch + &lt;i&gt;filename&lt;/i&gt;
+建立一个文件第二步- git add  + &lt;i&gt;filena
+        </p>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/03/hello-world/" data-id="cip1bye1a0001bw9wsq3kjst3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
 </article>
+    
 
-
-  
-
-</section>
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
         
-          <aside id="sidebar">
-  
+        <a href="/2016/06/04/DOM三大节点及相关性/" class="thumbnail">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
-    </div>
-  </div>
-
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li></ul>
-    </div>
-  </div>
-
-
-  
+        <span style="background-image:url(http://www.vikilife.com/wp-content/uploads/2012/09/201209284.jpg)" alt="DOM三大节点" class="thumbnail-image"></span>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/工具/" style="font-size: 10px;">工具</a>
-    </div>
-  </div>
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
         
-          <li>
-            <a href="/2016/06/04/GitHub的使用/">GitHub的使用</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/03/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-url="http://yoursite.com/2016/06/04/DOM三大节点及相关性/">0</span>
+    
+</span>
 
-  
+    
+</a>
+
+        
+        <div class="article-meta">
+            <p class="category">
+            <a class="article-category-link" href="/categories/笔记/">笔记</a>
+            </p>
+            <p class="date"><time datetime="2016-06-04T15:36:23.000Z" itemprop="datePublished">2016-06-04</time></p>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2016/06/04/DOM三大节点及相关性/">DOM三大节点</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+DOM三大节点元素节点      属性节点    文本节点nodeNanme元素节点： nodeName -&gt;节点名的大写属性节点： nodeName-&gt;属性名的大写文本节点： nodeName-&gt;#text#nodeValue
+元素节点： nodeValue -&gt;null（即使是本省带有value属性也不 行）属性节点： nodeValue -&gt;属性的值文本节点：
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2016/06/04/P元素不能包含块级元素包括其本身/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://img.store.sogou.com/net/a/04/link?appid=100140019&amp;url=http://imgstore.cdn.sogou.com/app/a/11220002/14515_pc.jpg)" alt="随笔" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-url="http://yoursite.com/2016/06/04/P元素不能包含块级元素包括其本身/">0</span>
+    
+</span>
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <p class="category">
+            <a class="article-category-link" href="/categories/随笔/">随笔</a>
+            </p>
+            <p class="date"><time datetime="2016-06-04T15:36:23.000Z" itemprop="datePublished">2016-06-04</time></p>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2016/06/04/P元素不能包含块级元素包括其本身/">随笔</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+P元素不能包含块级元素，包括其本身！
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2016/06/03/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-url="http://yoursite.com/2016/06/03/hello-world/">0</span>
+    
+</span>
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <p class="category">
+            
+            </p>
+            <p class="date"><time datetime="2016-06-03T12:02:44.562Z" itemprop="datePublished">2016-06-03</time></p>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2016/06/03/hello-world/">Hello World</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+
+    </div></section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/06/04/GitHub的使用/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://i.zeze.com/attachment/forum/201603/20/133245z65ghnj5zb44jnb5.jpeg)" alt="GitHub的使用" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/开发工具/">开发工具</a></p>
+                            <p class="item-title"><a href="/2016/06/04/GitHub的使用/" class="title">GitHub的使用</a></p>
+                            <p class="item-date"><time datetime="2016-06-04T15:36:23.000Z" itemprop="datePublished">2016-06-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/06/04/DOM三大节点及相关性/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://www.vikilife.com/wp-content/uploads/2012/09/201209284.jpg)" alt="DOM三大节点" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/笔记/">笔记</a></p>
+                            <p class="item-title"><a href="/2016/06/04/DOM三大节点及相关性/" class="title">DOM三大节点</a></p>
+                            <p class="item-date"><time datetime="2016-06-04T15:36:23.000Z" itemprop="datePublished">2016-06-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/06/04/P元素不能包含块级元素包括其本身/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://img.store.sogou.com/net/a/04/link?appid=100140019&amp;url=http://imgstore.cdn.sogou.com/app/a/11220002/14515_pc.jpg)" alt="随笔" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/随笔/">随笔</a></p>
+                            <p class="item-title"><a href="/2016/06/04/P元素不能包含块级元素包括其本身/" class="title">随笔</a></p>
+                            <p class="item-date"><time datetime="2016-06-04T15:36:23.000Z" itemprop="datePublished">2016-06-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/06/03/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/06/03/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2016-06-03T12:02:44.562Z" itemprop="datePublished">2016-06-03</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/笔记/">笔记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔/">随笔</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笔记/">笔记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/工具/" style="font-size: 10px;">工具</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
 </aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 TinyCloder<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2016 TinyCloder</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+    
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+        <script src="/vendor/scrollLoading/jquery.scrollLoading.js"></script>
+        <script src="/vendor/scrollLoading/main.js"></script>
+    
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
 
-
-<script src="/js/script.js"></script>
-
-  </div>
+    </div>
 </body>
 </html>
